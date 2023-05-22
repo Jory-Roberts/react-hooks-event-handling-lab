@@ -8,7 +8,7 @@ function Keypad() {
                 type='password'
                 placeholder='Enter password'
                 required
-                onChange={(e) => console.log('Entering password....')}
+                onChange={(e) => console.log('Entering password...')}
             />
         </div>
     )

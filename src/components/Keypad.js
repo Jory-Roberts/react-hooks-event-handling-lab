@@ -1,9 +1,20 @@
 // Code Keypad Component Here
 
-function Keypad (){
+function Keypad() {
+    function handleUserPassword() {
+        console.log('Entering password....')
+    }
     return (
-        <div></div>
+        <div>
+            <input
+                autoFocus
+                type='password'
+                placeholder='Enter password'
+                required
+                onChange={(e) => handleUserPassword(e.target.value)}
+            />
+        </div>
     )
 }
 
-export default Keypad;
+export default Keypad

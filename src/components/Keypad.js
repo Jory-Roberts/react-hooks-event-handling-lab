@@ -1,9 +1,6 @@
 // Code Keypad Component Here
 
 function Keypad() {
-    function handleUserPassword() {
-        console.log('Entering password....')
-    }
     return (
         <div>
             <input
@@ -11,7 +8,7 @@ function Keypad() {
                 type='password'
                 placeholder='Enter password'
                 required
-                onChange={(e) => handleUserPassword(e.target.value)}
+                onChange={(e) => console.log('Entering password....')}
             />
         </div>
     )
